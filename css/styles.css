@@ -1,0 +1,323 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Gilroy";
+  font-style: normal; 
+
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select,
+a {
+  font: inherit;
+}
+
+/* fonts link */
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Medium.woff);
+    src: url(../fonts/Gilroy-Medium.eot),
+    url(../fonts/Gilroy-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-Bold.woff);
+    src: url(../fonts/Gilroy-Bold.eot), 
+    url(../fonts/Gilroy-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* header mobyle styles start */
+
+
+
+/* header mobyle styles end */
+
+/* header styles start */
+
+.current{
+    display: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.wraper{
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    padding-top: 32px;
+    
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 32px;
+    padding-left: 0;
+    border-bottom: 1px solid #070707;
+}
+
+.header_item{
+    margin-right: 160px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header_item:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    color: #828282;
+}
+
+.header_item:first-child a{
+    color: #070707;
+}
+
+.header_link:hover, .header_link:active, .header_link:focus{
+    opacity: .75;
+}
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro{
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-top: 128px;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 47.3392px;
+    line-height: 59px;
+    text-align: left;
+}
+
+.profesion{
+    text-align: left;
+}
+
+.langu{
+    transform: rotate(-90deg);
+}
+
+.photo{
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 104px;
+}
+/* intro styles end */
+
+/*about styles start*/
+
+.about{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 107px;
+    background: #F6F6F6;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 91px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* .about_header{ 
+    font-weight: bold;
+    font-size: 34px;
+    padding-bottom: 20px;
+}*/
+
+.about p{
+    padding-top: 18px;
+}
+
+/*about styles end*/
+
+/*skills styles start*/
+
+.skills{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills_header{
+    margin-bottom: 69px;
+}
+
+.skills_text{
+    margin-bottom: 84px;
+}
+
+.skills_img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+/*skills styles end*/
+
+/*portfolio styles start*/
+
+.portfolio{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 97px;
+    margin-bottom: 114px;
+    background: #F6F6F6;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    }
+
+    .portfolio_header{
+        margin-bottom: 47px;
+    }
+
+    .f_store_img{
+        margin-bottom: 45px;
+    }
+
+    .f_store_text{
+        margin-bottom: 99px;
+    }
+
+    .r_store_img{
+        margin-bottom: 45px;
+    }
+
+    .r_store_text{
+        margin-bottom: 99px;
+    }
+
+    .braun_img{
+        margin-bottom: 45px;
+    }
+
+
+/*portfolio styles end*/
+
+/*contacts styles start*/
+
+.contacts{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts_header{
+    margin-bottom: 20px;
+}
+
+.contacts_mes_text{
+    margin-bottom: 30px;
+}
+
+.contacts_mes_but{
+    margin-bottom: 55px;
+}
+
+.contacts_icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.contacts_ico_item{
+    margin-right: 61.5px;
+}
+
+.contacts_icons a:last-child img{
+    margin-right: 0;
+}
+
+.contacts_icon_description{
+    color: #828282;
+    margin-bottom: 123px;
+}
+
+/*contacts styles end*/
